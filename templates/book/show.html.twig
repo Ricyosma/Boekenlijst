@@ -27,6 +27,12 @@
                 <th>Price</th>
                 <td>{{ book.Price }}</td>
             </tr>
+            <tr>
+                <th>Reviews</th>
+                {% for review in review %}
+                <td> <a href="{{ path('review_show', {'id': review.id}) }}"> {{ review.name }}</a></td>
+            </tr>
+            {% endfor %}
         </tbody>
     </table>
 
