@@ -3,7 +3,7 @@
 {% block title %}Book{% endblock %}
 
 {% block body %}
-    <h1>Book</h1>
+    <h1>Book list</h1>
 
     <table class="table">
         <tbody>
@@ -25,10 +25,10 @@
             </tr>
             <tr>
                 <th>Price</th>
-                <td>{{ book.Price }}</td>
+                <td> € {{ book.Price }}</td>
             </tr>
             <tr>
-                <th>Reviews</th>
+                <th>Reviews of users</th>
                 {% for review in review %}
                 <td> <a href="{{ path('review_show', {'id': review.id}) }}"> {{ review.name }}</a></td>
             </tr>
