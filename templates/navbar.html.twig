@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="nav-link" href="review/index.html.twig">Reviews</a>
- <a class="nav-link" href="book/index.html.twig">Books</a>
+<a class="nav-link" href="{{ path('review_index') }}">Reviews</a>
+ <a class="nav-link" href="{{path('book_index')}}">Books</a>
 
     </nav>
 {% endblock %}
